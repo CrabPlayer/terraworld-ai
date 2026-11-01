@@ -1,0 +1,19 @@
+// Tiny wooden house: a starter NPC home. Open it in Structure Studio or compile it with
+//   npm run structure -- compile scripts/examples/tiny-house.twspec
+name "Tiny Wooden House"
+description "A small starter house with doors, a table, a chair, a chest and torches."
+size 16 16
+// A 16-wide roof is 8 rows tall: base row 7, apex row 0.
+roof x=0 y=7 w=16 tile=Red_Dynasty_Shingles
+rect x=1 y=8 w=14 h=7 tile=Wood hollow=true
+rect x=2 y=9 w=12 h=5 wall=Wood_Wall
+rect x=0 y=15 w=16 h=1 tile=Gray_Brick
+clear x=1 y=11 h=3
+clear x=14 y=11 h=3
+object name=Wooden_Door x=1 y=14 at=floor
+object name=Wooden_Door x=14 y=14 at=floor
+object name=Wooden_Table x=6 y=14 at=floor
+object name=Wooden_Chair x=5 y=14 at=floor facing=right
+object name=Wooden_Chest x=10 y=14 at=floor items=Torch_x10,Wood_x50
+object name=Torch x=3 y=10
+object name=Torch x=12 y=10

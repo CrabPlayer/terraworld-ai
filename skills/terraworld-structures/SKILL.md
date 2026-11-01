@@ -1,0 +1,143 @@
+---
+name: terraworld-structures
+description: Design Terraria buildings (houses, NPC towns, castles, bases, arenas, farms) as TerraWorld structure specs that open in TerraWorld Structure Studio (terraworld.dev) and export to .twpack for the TerraWorld Blueprint mod. Use whenever the user asks to design, build, plan or fix a Terraria structure, or pastes a Structure Studio problem report.
+---
+
+# TerraWorld structures
+
+## Workflow
+
+1. If the request is very vague, ask one short question (size, style or purpose). Otherwise start designing.
+2. Plan the layout on a cell grid first: overall size, floors, rooms, doors, stairs and roof.
+3. Look up every name you are not sure of in `references/blocks.txt`, `references/walls.txt` or `references/objects.txt`. Search these files (for example with grep); do not read objects.txt whole, it is large.
+4. Write the spec to a file, for example `house.twspec`, and run `python scripts/check_spec.py house.twspec`. Fix every problem it prints and run it again until it prints OK.
+5. Run `python scripts/make_link.py house.twspec` and copy the printed link exactly, without retyping it.
+6. Reply with a short description, the spec in a code block, and the link. Tell the user they can also press **AI** in Structure Studio and paste the spec.
+7. When the user pastes a problem report from Structure Studio, fix every error and send the whole spec and a new link again.
+
+If you cannot run code in this conversation, skip steps 4 and 5 and give a `#spec=` link as the guide below explains.
+
+## User preferences
+
+- Reply in the language the user writes in. Keep Terraria names in the spec in English.
+
+---
+
+# TerraWorld
+
+> TerraWorld (https://terraworld.dev) is a free, browser-only set of Terraria tools: a world viewer and editor, a player editor, and Structure Studio, where people design buildings and export them as `.twpack` structure packages. The TerraWorld Blueprint tModLoader mod shows those packages in game as ghost projections and can build them automatically.
+
+This file teaches AI assistants to design Terraria structures for TerraWorld users. You write a short **structure spec** that uses Terraria names, not IDs. The user opens it in Structure Studio, which builds it in their browser, shows it in Real View, and exports the `.twpack`. Nothing is uploaded to a server.
+
+## How to hand a design to the user
+
+1. Write the spec in the text form below. Show it to the user in a code block first. It is the most reliable hand-over: the user presses **AI** in Structure Studio, pastes it, and presses **Build**.
+2. Then give a `#spec=` link: `https://terraworld.dev/structure-studio#spec=` followed by the same spec, with every space written as `+` and every newline as `;`. Write nothing else in the link (no quotes, no markdown inside it). Example:
+   `https://terraworld.dev/structure-studio#spec=size+12+8;rect+x=0+y=7+w=12+tile=Gray_Brick;object+name=Wooden_Chair+x=3+y=7+at=floor+facing=right`
+3. **Never write a `#z=` link by hand.** `#z=` holds compressed binary data: you cannot compute it in your head, and one wrong character makes the whole link unreadable. Use it only when you actually ran this code in this conversation, and paste its printed output exactly, without retyping it:
+   ```python
+   import zlib, base64
+   c = zlib.compressobj(9, zlib.DEFLATED, -15)
+   data = c.compress(spec.encode()) + c.flush()
+   print("https://terraworld.dev/structure-studio#z=" + base64.urlsafe_b64encode(data).decode().rstrip("="))
+   ```
+   If you are not sure, use `#spec=`.
+4. If a link is too long for the chat or does not open, the spec text from step 1 still works. It can also be saved as a `.twspec` file and opened in Structure Studio.
+5. Structure Studio lists problems such as unknown names, furniture without support, or furniture overwritten by later ops. The user can copy that report back to you. Fix every error; warnings are things that would break in game. Send the whole corrected spec again, not only the changed lines.
+
+## Spec text form
+
+One statement per line (or separated by `;`). `//` starts a comment line. Names are case-insensitive and `_` counts as a space, so `Gray_Brick` = `Gray Brick`. Values with spaces can also be quoted: `tile="Gray Brick"`.
+
+Coordinates are cells. `(0,0)` is the top-left corner, x grows right, **y grows down**. Every cell must be inside `size`.
+
+```
+name "Tiny Wooden House"
+description "A small starter house."
+size 16 16                                   // width height
+roof x=0 y=7 w=16 tile=Red_Dynasty_Shingles  // 45° gable; base row y, ceil(w/2) rows tall
+rect x=1 y=8 w=14 h=7 tile=Wood hollow=true  // outline only
+rect x=2 y=9 w=12 h=5 wall=Wood_Wall         // background wall
+rect x=0 y=15 w=16 h=1 tile=Gray_Brick
+clear x=1 y=11 h=3                           // door openings
+clear x=14 y=11 h=3
+object name=Wooden_Door x=1 y=14 at=floor
+object name=Wooden_Door x=14 y=14 at=floor
+object name=Wooden_Table x=6 y=14 at=floor
+object name=Wooden_Chair x=5 y=14 at=floor facing=right
+object name=Wooden_Chest x=10 y=14 at=floor items=Torch_x10,Wood_x50
+object name=Torch x=3 y=10                   // torches may hang on a background wall
+object name=Torch x=12 y=10
+```
+
+### Ops
+
+Ops run in order; later ops overwrite earlier ones.
+
+- `rect x y [w=1] [h=1] [hollow=true] <cell fields>`: applies the cell fields to every cell of the area.
+- `clear x y [w] [h] [layer=tile|wall|liquid|all]`: removes blocks (the default layer), walls, liquid, or everything.
+- `line x1 y1 x2 y2 <cell fields>`: a straight or diagonal line, which is handy for stairs.
+- `roof x y w tile [thickness=N wall=...] [slopes=false]`: a filled 45° gable roof whose base spans `x..x+w-1` on row `y`. The edge blocks are sloped. With `thickness`, only an N-cell shell is solid and the inside gets `wall`.
+- `object name x y [at=floor|ceiling|top-left] [facing=left|right] [variety=...] [attach=floor|ceiling|left_wall|right_wall] [replace=true] [items=...] [text=...] [chestName=...]`: places furniture or decor.
+  - `at=floor`: y is the floor row the object stands on; the object goes right above it, with its left column at x.
+  - `at=ceiling`: y is the row the object hangs from.
+  - default `top-left`: (x, y) is the object's top-left cell. That cell must itself be empty: it is never the floor row or a wall block.
+  - Cells under the object must be empty; `replace=true` clears them first.
+  - `items` (chests, dressers): comma-separated `Name` or `Name_xCount`, at most 40.
+  - `text`: the text of a sign.
+- `grid x y rows=AAAA/A..A/AAAA`: draws characters, row by row (`/` separates rows). Each character is looked up in the legend; `.` leaves the cell unchanged.
+- `legend C=value ...`: defines grid characters. A value is comma-separated parts: a bare name is the tile, and `wall:`, `shape:`, `paint:`, `wallPaint:`, `liquid:`, `clear:` set the rest. Example: `legend B=Gray_Brick,wall:Gray_Brick_Wall W=wall:Wood_Wall S=Gray_Brick,shape:slope-br`. Use letters and digits in the text form.
+
+### Cell fields
+
+- `tile=`: a block, or a 1×1 tile such as `Wood_Platform`.
+- `wall=`: a background wall. The word "Wall" is optional.
+- `shape=`: `full`, `half`, or a slope named by the corner that stays solid: `slope-bl` ◣, `slope-br` ◢, `slope-tl` ◤, `slope-tr` ◥. Shapes apply to blocks, not furniture.
+  - For a roof rising to the right, use `slope-br` on its left edge.
+  - For a roof falling to the right, use `slope-bl` on its right edge.
+- `paint=`, `wallPaint=`: Red, Orange, Yellow, Lime, Green, Teal, Cyan, Sky Blue, Blue, Purple, Violet, Pink, Deep Red ... Deep Pink, Black, White, Gray, Brown, Shadow, Negative.
+- `liquid=`: water, lava, honey, or shimmer (a full cell).
+- `clear=`: tile, wall, liquid, or all.
+
+## JSON form
+
+The same spec as JSON. Every op is an object with an `op` field and the same keys as above (`rows` may be an array of strings):
+
+```json
+{"format":"terraworld-structure-spec","version":1,"name":"Hut","width":10,"height":6,
+ "legend":{"B":{"tile":"Gray Brick","wall":"Gray Brick Wall"}},
+ "ops":[{"op":"rect","x":0,"y":5,"w":10,"tile":"Gray Brick"},
+        {"op":"object","name":"Wooden Chair","x":2,"y":5,"at":"floor","facing":"right"}]}
+```
+
+## Names
+
+Use exact Terraria English names. Unknown names are reported with suggestions. Full lists:
+
+- Blocks: https://terraworld.dev/ai/blocks.txt
+- Walls: https://terraworld.dev/ai/walls.txt
+- Objects with their size, attach side, facing and varieties: https://terraworld.dev/ai/objects.txt
+
+If terraworld.dev is blocked for you, every file here also lives on GitHub (https://github.com/CrabPlayer/terraworld-ai) and its CDN mirror: https://cdn.jsdelivr.net/gh/CrabPlayer/terraworld-ai@main/llms.txt and https://cdn.jsdelivr.net/gh/CrabPlayer/terraworld-ai@main/ai/objects.txt (same for blocks.txt and walls.txt).
+
+Some common ones:
+- Blocks: Gray Brick, Stone Slab, Wood, Rich Mahogany, Boreal Wood, Red Brick, Gold Brick, Glass, Red Dynasty Shingles, Blue Dynasty Shingles, Wooden Beam.
+- 1×1 tiles: Wood Platform, Stone Platform.
+- Walls: Wood Wall, Gray Brick Wall, Stone Slab Wall, Planked Wall, Glass Wall, Blue Stained Glass, Multicolored Stained Glass.
+- Objects:
+  - 1×3 or 2×3: Wooden Door (variety A/B/C), Iron Door.
+  - Wooden Table 3×2, Wooden Chair 1×2 (facing), Wooden Bed 4×2 (variety Left/Right), Wooden Chest 2×2, Gold Chest, Wooden Bookcase, Grandfather Clock, Wooden Piano, Wooden Sofa, Throne, Fireplace (variety Lit), Candelabra (variety On), Armor Statue (variety Left/Right).
+  - Lighting: Torch, Gold Chandelier (variety On), Chain Lantern.
+  - Banners: Red Banner, Blue Banner, Yellow Banner (hang from a ceiling).
+
+## Design rules that matter in game
+
+- Furniture needs support: floor objects need a block under at least one column, hanging objects need a block above, doors need a block above and below, and paintings need a background wall behind every cell.
+- Every object occupies empty cells. It never goes inside a block, a wall column, a floor row, or a roof. Before placing an object, check that the ops so far left its cells empty.
+- **Torches** are the most common mistake. A torch is a 1×1 object in an empty cell. "A torch on the wall" in Terraria means a torch in an empty interior cell in front of a background wall, not in the cell of the wall block. For a room whose outer wall blocks are at x=10 and x=30 with the floor at y=20, good torch cells are `object name=Torch x=11 y=17` and `object name=Torch x=29 y=17`: inside the room, a few rows above the floor, with a background wall behind them. Without a background wall, put the torch directly on a floor block (`at=floor`) or next to a block with `attach=left_wall` (block on its left) or `attach=right_wall` (block on its right).
+- If Structure Studio reports that an object needs an empty cell, its message names the nearest empty spot with support. Use that position.
+- Leave furniture cells empty. Do not draw blocks over furniture afterwards; reorder the ops instead.
+- An NPC house needs walls and a background wall (no gaps), a light source, a flat surface (table), a comfort item (chair), and a door or platform entrance. Its inside must be at least 60 tiles and at most 750.
+- Doors are 1 wide and 3 tall. Cut a 1×3 opening in the outer wall and place the door with `at=floor` on the floor row.
+- Platforms (`Wood Platform`) make walkable floors you can drop through. Use them for stairwells between storeys.
+- Keep the design reasonably sized (up to a few hundred cells per side). Prefer `rect` and `roof` for big shapes and `grid` for detail.

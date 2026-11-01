@@ -1,0 +1,105 @@
+{
+  "sets": [
+    {
+      "name": "Crimson Blocks",
+      "tiles": [
+        { "id": 203, "name": "Crimstone Block" },
+        { "id": 234, "name": "Crimsand Block" },
+        { "id": 200, "name": "Red Ice Block" },
+        { "id": 199, "name": "Crimson Grass Block" },
+        { "id": 201, "name": "Crimson Short Plants" },
+        { "id": 205, "name": "Crimson Vines" },
+        { "id": 401, "name": "Crimson Sandstone Block" },
+        { "id": 399, "name": "Crimson Hardened Sand Block" },
+        { "id": 662, "name": "Crimson Jungle Grass Block" },
+        { "id": 352, "name": "Crimtane Thorns" }
+      ],
+      "walls": [],
+      "items": []
+    },
+    {
+      "name": "Corruption Blocks",
+      "tiles": [
+        { "id": 25, "name": "Ebonstone Block" },
+        { "id": 112, "name": "Ebonsand Block" },
+        { "id": 163, "name": "Purple Ice Block" },
+        { "id": 23, "name": "Corrupt Grass Block" },
+        { "id": 24, "name": "Corruption Short Plants" },
+        { "id": 636, "name": "Corrupt Vines" },
+        { "id": 400, "name": "Corrupt Sandstone Block" },
+        { "id": 398, "name": "Corrupt Hardened Sand Block" },
+        { "id": 661, "name": "Corrupt Jungle Grass Block" }
+      ],
+      "walls": [],
+      "items": []
+    },
+    {
+      "name": "Hallow Blocks",
+      "tiles": [
+        { "id": 117, "name": "Pearlstone Block" },
+        { "id": 116, "name": "Pearlsand Block" },
+        { "id": 164, "name": "Pink Ice Block" },
+        { "id": 109, "name": "Hallowed Grass Block" },
+        { "id": 110, "name": "Hallow Short Plants" },
+        { "id": 115, "name": "Hallowed Vines" },
+        { "id": 403, "name": "Hallow Sandstone Block" },
+        { "id": 402, "name": "Hallow Hardened Sand Block" }
+      ],
+      "walls": [],
+      "items": []
+    },
+    {
+      "name": "Chests",
+      "tiles": [
+        { "id": 21, "name": "Chests" },
+        { "id": 467, "name": "Chests (Group 2)" },
+        { "id": 468, "name": "Trapped Chests (Group 2)" }
+      ],
+      "walls": [],
+      "items": []
+    },
+    {
+      "name": "Biome Chests",
+      "tiles": [
+        { "id": 21, "name": "Jungle Chest", "variety": "Locked", "uv": [828, 0] },
+        { "id": 21, "name": "Jungle Chest", "uv": [648, 0] },
+        { "id": 21, "name": "Corruption Chest", "variety": "Locked", "uv": [864, 0] },
+        { "id": 21, "name": "Corruption Chest", "uv": [684, 0] },
+        { "id": 21, "name": "Crimson Chest", "variety": "Locked", "uv": [900, 0] },
+        { "id": 21, "name": "Crimson Chest", "uv": [720, 0] },
+        { "id": 21, "name": "Hallowed Chest", "variety": "Locked", "uv": [936, 0] },
+        { "id": 21, "name": "Hallowed Chest", "uv": [756, 0] },
+        { "id": 21, "name": "Frozen Chest", "variety": "Locked", "uv": [972, 0] },
+        { "id": 21, "name": "Frozen Chest", "uv": [792, 0] },
+        { "id": 467, "name": "Desert Chest", "variety": "Locked", "uv": [468, 0] },
+        { "id": 467, "name": "Desert Chest", "uv": [432, 0] }
+      ],
+      "walls": [],
+      "items": []
+    },
+    {
+      "name": "Spider Caves",
+      "tiles": [
+        { "id": 21, "name": "Web Coverd Chest", "uv": [540, 0] }
+      ],
+      "walls": [
+        { "id": 62, "name": "Infested Spider Wall" }
+      ],
+      "items": [
+        { "id": 939, "name": "Web Slinger" }
+      ]
+    },
+    {
+      "name": "Enchanted Items",
+      "tiles": [
+        { "id": 187, "name": "Decos (3x2) (Group 2)", "variety": "Enchanted Sword", "uv": [918, 0] },
+        { "id": 648, "name": "Large Rubble (3x2) (Group 2)", "variety": "Enchanted Sword", "uv": [918, 0] }
+      ],
+      "walls": [],
+      "items": [
+        { "id": 55, "name": "Enchanted Boomerang" },
+        { "id": 989, "name": "Enchanted Sword" }
+      ]
+    }
+  ]
+}

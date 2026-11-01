@@ -1,0 +1,2385 @@
+[
+  {
+    "id": 0,
+    "name": "Sky",
+    "key": "None",
+    "color": "#00000000"
+  },
+  {
+    "id": 1,
+    "name": "Stone Wall",
+    "key": "Stone",
+    "color": "#343434FF",
+    "blendType": 48
+  },
+  {
+    "id": 2,
+    "name": "Dirt Wall (natural)",
+    "key": "DirtUnsafe",
+    "color": "#583D2EFF"
+  },
+  {
+    "id": 3,
+    "name": "Ebonstone Wall (natural)",
+    "key": "EbonstoneUnsafe",
+    "color": "#3D3A4EFF",
+    "blendType": 48
+  },
+  {
+    "id": 4,
+    "name": "Wood Wall",
+    "key": "Wood",
+    "color": "#493324FF"
+  },
+  {
+    "id": 5,
+    "name": "Gray Brick Wall",
+    "key": "GrayBrick",
+    "color": "#343434FF"
+  },
+  {
+    "id": 6,
+    "name": "Red Brick Wall",
+    "key": "RedBrick",
+    "color": "#5B1E1EFF"
+  },
+  {
+    "id": 7,
+    "name": "Cursed Blue Brick Wall",
+    "key": "BlueDungeonUnsafe",
+    "color": "#1B1F2AFF",
+    "blendType": 17
+  },
+  {
+    "id": 8,
+    "name": "Cursed Green Brick Wall",
+    "key": "GreenDungeonUnsafe",
+    "color": "#1F271AFF",
+    "blendType": 18
+  },
+  {
+    "id": 9,
+    "name": "Cursed Pink Brick Wall",
+    "key": "PinkDungeonUnsafe",
+    "color": "#291C24FF",
+    "blendType": 19
+  },
+  {
+    "id": 10,
+    "name": "Gold Brick Wall",
+    "key": "GoldBrick",
+    "color": "#4A3E0CFF"
+  },
+  {
+    "id": 11,
+    "name": "Silver Brick Wall",
+    "key": "SilverBrick",
+    "color": "#2E383BFF"
+  },
+  {
+    "id": 12,
+    "name": "Copper Brick Wall",
+    "key": "CopperBrick",
+    "color": "#4B200BFF"
+  },
+  {
+    "id": 13,
+    "name": "Hellstone Brick Wall (natural)",
+    "key": "HellstoneBrickUnsafe",
+    "color": "#432525FF"
+  },
+  {
+    "id": 14,
+    "name": "Obsidian Brick Wall (natural)",
+    "key": "ObsidianBrickUnsafe",
+    "color": "#0F0F0FFF",
+    "blendType": 20
+  },
+  {
+    "id": 15,
+    "name": "Mud Wall (natural)",
+    "key": "MudUnsafe",
+    "color": "#342B2DFF",
+    "blendType": 247
+  },
+  {
+    "id": 16,
+    "name": "Dirt Wall",
+    "key": "Dirt",
+    "color": "#583D2EFF",
+    "blendType": 2
+  },
+  {
+    "id": 17,
+    "name": "Blue Brick Wall",
+    "key": "BlueDungeon",
+    "color": "#1B1F2AFF",
+    "blendType": 94
+  },
+  {
+    "id": 18,
+    "name": "Green Brick Wall",
+    "key": "GreenDungeon",
+    "color": "#1F271AFF",
+    "blendType": 98
+  },
+  {
+    "id": 19,
+    "name": "Pink Brick Wall",
+    "key": "PinkDungeon",
+    "color": "#291C24FF",
+    "blendType": 96
+  },
+  {
+    "id": 20,
+    "name": "Obsidian Brick Wall",
+    "key": "ObsidianBrick",
+    "color": "#0F0F0FFF",
+    "blendType": 14
+  },
+  {
+    "id": 21,
+    "name": "Glass Wall",
+    "key": "Glass",
+    "color": "#365962FF"
+  },
+  {
+    "id": 22,
+    "name": "Pearlstone Brick Wall",
+    "key": "PearlstoneBrick",
+    "color": "#716363FF"
+  },
+  {
+    "id": 23,
+    "name": "Iridescent Brick Wall",
+    "key": "IridescentBrick",
+    "color": "#26262BFF"
+  },
+  {
+    "id": 24,
+    "name": "Mudstone Brick Wall",
+    "key": "MudstoneBrick",
+    "color": "#352729FF"
+  },
+  {
+    "id": 25,
+    "name": "Cobalt Brick Wall",
+    "key": "CobaltBrick",
+    "color": "#0B233EFF"
+  },
+  {
+    "id": 26,
+    "name": "Mythril Brick Wall",
+    "key": "MythrilBrick",
+    "color": "#153F46FF"
+  },
+  {
+    "id": 27,
+    "name": "Planked Wall",
+    "key": "Planked",
+    "color": "#583D2EFF"
+  },
+  {
+    "id": 28,
+    "name": "Pearlstone Wall (natural)",
+    "key": "PearlstoneBrickUnsafe",
+    "color": "#515465FF",
+    "blendType": 248
+  },
+  {
+    "id": 29,
+    "name": "Red Candy Cane Wall",
+    "key": "CandyCane",
+    "color": "#581717FF"
+  },
+  {
+    "id": 30,
+    "name": "Green Candy Cane Wall",
+    "key": "GreenCandyCane",
+    "color": "#1C5817FF"
+  },
+  {
+    "id": 31,
+    "name": "Snow Brick Wall",
+    "key": "SnowBrick",
+    "color": "#4E5763FF"
+  },
+  {
+    "id": 32,
+    "name": "Adamantite Beam Wall",
+    "key": "AdamantiteBeam",
+    "color": "#561128FF"
+  },
+  {
+    "id": 33,
+    "name": "Demonite Brick Wall",
+    "key": "DemoniteBrick",
+    "color": "#312F53FF"
+  },
+  {
+    "id": 34,
+    "name": "Sandstone Brick Wall",
+    "key": "SandstoneBrick",
+    "color": "#454329FF"
+  },
+  {
+    "id": 35,
+    "name": "Ebonstone Brick Wall",
+    "key": "EbonstoneBrick",
+    "color": "#333346FF"
+  },
+  {
+    "id": 36,
+    "name": "Red Stucco Wall",
+    "key": "RedStucco",
+    "color": "#573B37FF"
+  },
+  {
+    "id": 37,
+    "name": "Yellow Stucco Wall",
+    "key": "YellowStucco",
+    "color": "#454329FF"
+  },
+  {
+    "id": 38,
+    "name": "Green Stucco Wall",
+    "key": "GreenStucco",
+    "color": "#313931FF"
+  },
+  {
+    "id": 39,
+    "name": "Gray Stucco Wall",
+    "key": "Gray",
+    "color": "#4E4F49FF"
+  },
+  {
+    "id": 40,
+    "name": "Snow Wall (natural)",
+    "key": "SnowWallUnsafe",
+    "color": "#556667FF",
+    "blendType": 249
+  },
+  {
+    "id": 41,
+    "name": "Ebonwood Wall",
+    "key": "Ebonwood",
+    "color": "#34323EFF"
+  },
+  {
+    "id": 42,
+    "name": "Rich Mahogany Wall",
+    "key": "RichMaogany",
+    "color": "#472A2CFF"
+  },
+  {
+    "id": 43,
+    "name": "Pearlwood Wall",
+    "key": "Pearlwood",
+    "color": "#494232FF"
+  },
+  {
+    "id": 44,
+    "name": "Rainbow Brick Wall",
+    "key": "RainbowBrick",
+    "color": "#343434FF"
+  },
+  {
+    "id": 45,
+    "name": "Tin Brick Wall",
+    "key": "TinBrick",
+    "color": "#3C3B33FF"
+  },
+  {
+    "id": 46,
+    "name": "Tungsten Brick Wall",
+    "key": "TungstenBrick",
+    "color": "#30392FFF"
+  },
+  {
+    "id": 47,
+    "name": "Platinum Brick Wall",
+    "key": "PlatinumBrick",
+    "color": "#474D55FF"
+  },
+  {
+    "id": 48,
+    "name": "Amethyst Wall (natural)",
+    "key": "AmethystUnsafe",
+    "color": "#343434FF",
+    "blendType": 1
+  },
+  {
+    "id": 49,
+    "name": "Topaz Wall (natural)",
+    "key": "TopazUnsafe",
+    "color": "#343434FF",
+    "blendType": 1
+  },
+  {
+    "id": 50,
+    "name": "Sapphire Wall (natural)",
+    "key": "SapphireUnsafe",
+    "color": "#343434FF",
+    "blendType": 1
+  },
+  {
+    "id": 51,
+    "name": "Emerald Wall (natural)",
+    "key": "EmeraldUnsafe",
+    "color": "#343434FF",
+    "blendType": 1
+  },
+  {
+    "id": 52,
+    "name": "Ruby Wall (natural)",
+    "key": "RubyUnsafe",
+    "color": "#343434FF",
+    "blendType": 1
+  },
+  {
+    "id": 53,
+    "name": "Diamond Wall (natural)",
+    "key": "DiamondUnsafe",
+    "color": "#343434FF",
+    "blendType": 1
+  },
+  {
+    "id": 54,
+    "name": "Green Mossy Wall (natural)",
+    "key": "CaveUnsafe",
+    "color": "#283832FF",
+    "blendType": 256
+  },
+  {
+    "id": 55,
+    "name": "Brown Mossy Wall (natural)",
+    "key": "Cave2Unsafe",
+    "color": "#313024FF",
+    "blendType": 257
+  },
+  {
+    "id": 56,
+    "name": "Red Mossy Wall (natural)",
+    "key": "Cave3Unsafe",
+    "color": "#2B2120FF",
+    "blendType": 258
+  },
+  {
+    "id": 57,
+    "name": "Blue Mossy Wall (natural)",
+    "key": "Cave4Unsafe",
+    "color": "#1F2831FF",
+    "blendType": 259
+  },
+  {
+    "id": 58,
+    "name": "Purple Mossy Wall (natural)",
+    "key": "Cave5Unsafe",
+    "color": "#302334FF",
+    "blendType": 260
+  },
+  {
+    "id": 59,
+    "name": "Rocky Dirt Wall (natural)",
+    "key": "Cave6Unsafe",
+    "color": "#583D2EFF",
+    "blendType": 261
+  },
+  {
+    "id": 60,
+    "name": "Living Leaf Wall (natural)",
+    "key": "LivingLeaf",
+    "color": "#013414FF"
+  },
+  {
+    "id": 61,
+    "name": "Old Stone Wall (natural)",
+    "key": "Cave7Unsafe",
+    "color": "#37271AFF",
+    "blendType": 262
+  },
+  {
+    "id": 62,
+    "name": "Infested Spider Wall",
+    "key": "SpiderUnsafe",
+    "color": "#27211AFF",
+    "blendType": 263
+  },
+  {
+    "id": 63,
+    "name": "Grass Wall (natural)",
+    "key": "GrassUnsafe",
+    "color": "#1E5030FF",
+    "blendType": 66
+  },
+  {
+    "id": 64,
+    "name": "Jungle Wall (natural)",
+    "key": "JungleUnsafe",
+    "color": "#35501EFF",
+    "blendType": 67
+  },
+  {
+    "id": 65,
+    "name": "Flower Wall (natural)",
+    "key": "FlowerUnsafe",
+    "color": "#1E5030FF",
+    "blendType": 68
+  },
+  {
+    "id": 66,
+    "name": "Grass Wall",
+    "key": "Grass",
+    "color": "#1E5030FF",
+    "blendType": 66
+  },
+  {
+    "id": 67,
+    "name": "Jungle Wall",
+    "key": "Jungle",
+    "color": "#35501EFF",
+    "blendType": 67
+  },
+  {
+    "id": 68,
+    "name": "Flower Wall",
+    "key": "Flower",
+    "color": "#1E5030FF",
+    "blendType": 68
+  },
+  {
+    "id": 69,
+    "name": "Corrupt Grass Wall (natural)",
+    "key": "CorruptGrassUnsafe",
+    "color": "#2B2A44FF",
+    "blendType": 264
+  },
+  {
+    "id": 70,
+    "name": "Hallowed Grass Wall (natural)",
+    "key": "HallowedGrassUnsafe",
+    "color": "#1E4650FF",
+    "blendType": 265
+  },
+  {
+    "id": 71,
+    "name": "Ice Wall (natural)",
+    "key": "IceUnsafe",
+    "color": "#4E6987FF",
+    "blendType": 266
+  },
+  {
+    "id": 72,
+    "name": "Cactus Wall",
+    "key": "Cactus",
+    "color": "#34540CFF"
+  },
+  {
+    "id": 73,
+    "name": "Cloud Wall",
+    "key": "Cloud",
+    "color": "#BECCDFFF"
+  },
+  {
+    "id": 74,
+    "name": "Mushroom Wall",
+    "key": "Mushroom",
+    "color": "#403E50FF",
+    "blendType": 80
+  },
+  {
+    "id": 75,
+    "name": "Bone Block Wall",
+    "key": "Bone",
+    "color": "#414123FF"
+  },
+  {
+    "id": 76,
+    "name": "Slime Block Wall",
+    "key": "Slime",
+    "color": "#142E68FF"
+  },
+  {
+    "id": 77,
+    "name": "Flesh Block Wall",
+    "key": "Flesh",
+    "color": "#3D0D10FF",
+    "blendType": 81
+  },
+  {
+    "id": 78,
+    "name": "Living Wood Wall",
+    "key": "LivingWood",
+    "color": "#3F271AFF",
+    "blendType": 244
+  },
+  {
+    "id": 79,
+    "name": "Obsidian Back Wall (natural)",
+    "key": "ObsidianBackUnsafe",
+    "color": "#332F60FF",
+    "blendType": 267
+  },
+  {
+    "id": 80,
+    "name": "Mushroom Wall (natural)",
+    "key": "MushroomUnsafe",
+    "color": "#403E50FF",
+    "blendType": 74
+  },
+  {
+    "id": 81,
+    "name": "Crimson Grass Wall (natural)",
+    "key": "CrimsonGrassUnsafe",
+    "color": "#653333FF",
+    "blendType": 268
+  },
+  {
+    "id": 82,
+    "name": "Disc Wall",
+    "key": "DiscWall",
+    "color": "#4D4022FF"
+  },
+  {
+    "id": 83,
+    "name": "Crimstone Wall (natural)",
+    "key": "CrimstoneUnsafe",
+    "color": "#3E2629FF",
+    "blendType": 269
+  },
+  {
+    "id": 84,
+    "name": "Ice Brick Wall",
+    "key": "IceBrick",
+    "color": "#304E5DFF"
+  },
+  {
+    "id": 85,
+    "name": "Shadewood Wall",
+    "key": "Shadewood",
+    "color": "#363F45FF"
+  },
+  {
+    "id": 86,
+    "name": "Hive Wall (natural)",
+    "key": "HiveUnsafe",
+    "color": "#8A4926FF",
+    "blendType": 108
+  },
+  {
+    "id": 87,
+    "name": "Forbidden Lihzahrd Brick Wall",
+    "key": "LihzahrdBrickUnsafe",
+    "color": "#320F08FF",
+    "blendType": 112
+  },
+  {
+    "id": 88,
+    "name": "Purple Stained Glass",
+    "key": "PurpleStainedGlass",
+    "color": "#73447CFF"
+  },
+  {
+    "id": 89,
+    "name": "Yellow Stained Glass",
+    "key": "YellowStainedGlass",
+    "color": "#81724AFF"
+  },
+  {
+    "id": 90,
+    "name": "Blue Stained Glass",
+    "key": "BlueStainedGlass",
+    "color": "#3E567BFF"
+  },
+  {
+    "id": 91,
+    "name": "Green Stained Glass",
+    "key": "GreenStainedGlass",
+    "color": "#5A795EFF"
+  },
+  {
+    "id": 92,
+    "name": "Red Stained Glass",
+    "key": "RedStainedGlass",
+    "color": "#873E3DFF"
+  },
+  {
+    "id": 93,
+    "name": "Multicolored Stained Glass",
+    "key": "RainbowStainedGlass",
+    "color": "#646067FF"
+  },
+  {
+    "id": 94,
+    "name": "Cursed Blue Slab Wall",
+    "key": "BlueDungeonSlabUnsafe",
+    "color": "#20282DFF",
+    "blendType": 100
+  },
+  {
+    "id": 95,
+    "name": "Cursed Blue Tiled Wall",
+    "key": "BlueDungeonTileUnsafe",
+    "color": "#2C2932FF",
+    "blendType": 101
+  },
+  {
+    "id": 96,
+    "name": "Cursed Pink Slab Wall",
+    "key": "PinkDungeonSlabUnsafe",
+    "color": "#48324DFF",
+    "blendType": 102
+  },
+  {
+    "id": 97,
+    "name": "Cursed Pink Tiled Wall",
+    "key": "PinkDungeonTileUnsafe",
+    "color": "#4E3245FF",
+    "blendType": 103
+  },
+  {
+    "id": 98,
+    "name": "Cursed Green Slab Wall",
+    "key": "GreenDungeonSlabUnsafe",
+    "color": "#242D2CFF",
+    "blendType": 104
+  },
+  {
+    "id": 99,
+    "name": "Cursed Green Tiled Wall",
+    "key": "GreenDungeonTileUnsafe",
+    "color": "#263132FF",
+    "blendType": 105
+  },
+  {
+    "id": 100,
+    "name": "Blue Slab Wall",
+    "key": "BlueDungeonSlab",
+    "color": "#20282DFF"
+  },
+  {
+    "id": 101,
+    "name": "Blue Tiled Wall",
+    "key": "BlueDungeonTile",
+    "color": "#2C2932FF"
+  },
+  {
+    "id": 102,
+    "name": "Pink Slab Wall",
+    "key": "PinkDungeonSlab",
+    "color": "#48324DFF"
+  },
+  {
+    "id": 103,
+    "name": "Pink Tiled Wall",
+    "key": "PinkDungeonTile",
+    "color": "#4E3245FF"
+  },
+  {
+    "id": 104,
+    "name": "Green Slab Wall",
+    "key": "GreenDungeonSlab",
+    "color": "#242D2CFF"
+  },
+  {
+    "id": 105,
+    "name": "Green Tiled Wall",
+    "key": "GreenDungeonTile",
+    "color": "#263132FF"
+  },
+  {
+    "id": 106,
+    "name": "Wooden Fence",
+    "key": "WoodenFence",
+    "color": "#94744AFF"
+  },
+  {
+    "id": 107,
+    "name": "Lead Fence",
+    "key": "MetalFence",
+    "color": "#3C3C3CFF"
+  },
+  {
+    "id": 108,
+    "name": "Hive Wall",
+    "key": "Hive",
+    "color": "#8A4926FF",
+    "blendType": 86
+  },
+  {
+    "id": 109,
+    "name": "Palladium Column Wall",
+    "key": "PalladiumColumn",
+    "color": "#5E1911FF"
+  },
+  {
+    "id": 110,
+    "name": "Bubblegum Block Wall",
+    "key": "BubblegumBlock",
+    "color": "#7D247AFF"
+  },
+  {
+    "id": 111,
+    "name": "Titanstone Block Wall",
+    "key": "TitanstoneBlock",
+    "color": "#33231BFF"
+  },
+  {
+    "id": 112,
+    "name": "Lihzahrd Brick Wall",
+    "key": "LihzahrdBrick",
+    "color": "#320F08FF",
+    "blendType": 87
+  },
+  {
+    "id": 113,
+    "name": "Pumpkin Wall",
+    "key": "Pumpkin",
+    "color": "#873A00FF"
+  },
+  {
+    "id": 114,
+    "name": "Hay Wall",
+    "key": "Hay",
+    "color": "#41340FFF"
+  },
+  {
+    "id": 115,
+    "name": "Spooky Wood Wall",
+    "key": "SpookyWood",
+    "color": "#272A33FF"
+  },
+  {
+    "id": 116,
+    "name": "Christmas Tree Wallpaper",
+    "key": "ChristmasTreeWallpaper",
+    "color": "#591A1BFF"
+  },
+  {
+    "id": 117,
+    "name": "Ornament Wallpaper",
+    "key": "OrnamentWallpaper",
+    "color": "#7E7B73FF"
+  },
+  {
+    "id": 118,
+    "name": "Candy Cane Wallpaper",
+    "key": "CandyCaneWallpaper",
+    "color": "#083213FF"
+  },
+  {
+    "id": 119,
+    "name": "Festive Wallpaper",
+    "key": "FestiveWallpaper",
+    "color": "#5F1518FF"
+  },
+  {
+    "id": 120,
+    "name": "Stars Wallpaper",
+    "key": "StarsWallpaper",
+    "color": "#111F41FF"
+  },
+  {
+    "id": 121,
+    "name": "Squiggles Wallpaper",
+    "key": "SquigglesWallpaper",
+    "color": "#C0AD8FFF"
+  },
+  {
+    "id": 122,
+    "name": "Snowflake Wallpaper",
+    "key": "SnowflakeWallpaper",
+    "color": "#727283FF"
+  },
+  {
+    "id": 123,
+    "name": "Krampus Horn Wallpaper",
+    "key": "KrampusHornWallpaper",
+    "color": "#887707FF"
+  },
+  {
+    "id": 124,
+    "name": "Bluegreen Wallpaper",
+    "key": "BluegreenWallpaper",
+    "color": "#084803FF"
+  },
+  {
+    "id": 125,
+    "name": "Grinch Finger Wallpaper",
+    "key": "GrinchFingerWallpaper",
+    "color": "#758452FF"
+  },
+  {
+    "id": 126,
+    "name": "Fancy Gray Wallpaper",
+    "key": "FancyGrayWallpaper",
+    "color": "#646672FF"
+  },
+  {
+    "id": 127,
+    "name": "Ice Floe Wallpaper",
+    "key": "IceFloeWallpaper",
+    "color": "#1E76E2FF"
+  },
+  {
+    "id": 128,
+    "name": "Music Wallpaper",
+    "key": "MusicWallpaper",
+    "color": "#5D0666FF"
+  },
+  {
+    "id": 129,
+    "name": "Purple Rain Wallpaper",
+    "key": "PurpleRainWallpaper",
+    "color": "#4028A9FF"
+  },
+  {
+    "id": 130,
+    "name": "Rainbow Wallpaper",
+    "key": "RainbowWallpaper",
+    "color": "#2722B4FF"
+  },
+  {
+    "id": 131,
+    "name": "Sparkle Stone Wallpaper",
+    "key": "SparkleStoneWallpaper",
+    "color": "#575E7DFF"
+  },
+  {
+    "id": 132,
+    "name": "Starlit Heaven Wallpaper",
+    "key": "StarlitHeavenWallpaper",
+    "color": "#060606FF"
+  },
+  {
+    "id": 133,
+    "name": "Bubble Wallpaper",
+    "key": "BubbleWallpaper",
+    "color": "#4548BAFF"
+  },
+  {
+    "id": 134,
+    "name": "Copper Pipe Wallpaper",
+    "key": "CopperPipeWallpaper",
+    "color": "#823E10FF"
+  },
+  {
+    "id": 135,
+    "name": "Ducky Wallpaper",
+    "key": "DuckyWallpaper",
+    "color": "#167BA3FF"
+  },
+  {
+    "id": 136,
+    "name": "Waterfall Wall",
+    "key": "Waterfall",
+    "color": "#285697FF"
+  },
+  {
+    "id": 137,
+    "name": "Lavafall Wall",
+    "key": "Lavafall",
+    "color": "#B74B0FFF"
+  },
+  {
+    "id": 138,
+    "name": "Ebonwood Fence",
+    "key": "EbonwoodFence",
+    "color": "#535064FF"
+  },
+  {
+    "id": 139,
+    "name": "Rich Mahogany Fence",
+    "key": "RichMahoganyFence",
+    "color": "#734144FF"
+  },
+  {
+    "id": 140,
+    "name": "Pearlwood Fence",
+    "key": "PearlwoodFence",
+    "color": "#776C51FF"
+  },
+  {
+    "id": 141,
+    "name": "Shadewood Fence",
+    "key": "ShadewoodFence",
+    "color": "#3B4347FF"
+  },
+  {
+    "id": 142,
+    "name": "White Dynasty Wall",
+    "key": "WhiteDynasty",
+    "color": "#DED8CAFF"
+  },
+  {
+    "id": 143,
+    "name": "Blue Dynasty Wall",
+    "key": "BlueDynasty",
+    "color": "#5A7069FF"
+  },
+  {
+    "id": 144,
+    "name": "Arcane Rune Wall",
+    "key": "ArcaneRunes",
+    "color": "#3E1C57FF"
+  },
+  {
+    "id": 145,
+    "name": "Iron Fence",
+    "key": "IronFence",
+    "color": "#909090FF"
+  },
+  {
+    "id": 146,
+    "name": "Copper Plating Wall",
+    "key": "CopperPlating",
+    "color": "#783B13FF",
+    "largeFrameType": 1
+  },
+  {
+    "id": 147,
+    "name": "Stone Slab Wall",
+    "key": "StoneSlab",
+    "color": "#3B3B3BFF",
+    "largeFrameType": 1
+  },
+  {
+    "id": 148,
+    "name": "Sail",
+    "key": "Sail",
+    "color": "#E5DAA1FF"
+  },
+  {
+    "id": 149,
+    "name": "Boreal Wood Wall",
+    "key": "BorealWood",
+    "color": "#493B32FF"
+  },
+  {
+    "id": 150,
+    "name": "Boreal Wood Fence",
+    "key": "BorealWoodFence",
+    "color": "#493B32FF"
+  },
+  {
+    "id": 151,
+    "name": "Palm Wood Wall",
+    "key": "PalmWood",
+    "color": "#664B22FF"
+  },
+  {
+    "id": 152,
+    "name": "Palm Wood Fence",
+    "key": "PalmWoodFence",
+    "color": "#664B22FF"
+  },
+  {
+    "id": 153,
+    "name": "Amber Gemspark Wall",
+    "key": "AmberGemspark",
+    "color": "#FF914FFF"
+  },
+  {
+    "id": 154,
+    "name": "Amethyst Gemspark Wall",
+    "key": "AmethystGemspark",
+    "color": "#DD4FFFFF"
+  },
+  {
+    "id": 155,
+    "name": "Diamond Gemspark Wall",
+    "key": "DiamondGemspark",
+    "color": "#F0F0F7FF"
+  },
+  {
+    "id": 156,
+    "name": "Emerald Gemspark Wall",
+    "key": "EmeraldGemspark",
+    "color": "#4FFF59FF"
+  },
+  {
+    "id": 157,
+    "name": "Offline Amber Gemspark Wall",
+    "key": "AmberGemsparkOff",
+    "color": "#9A5331FF"
+  },
+  {
+    "id": 158,
+    "name": "Offline Amethyst Gemspark Wall",
+    "key": "AmethystGemsparkOff",
+    "color": "#6B319AFF"
+  },
+  {
+    "id": 159,
+    "name": "Offline Diamond Gemspark Wall",
+    "key": "DiamondGemsparkOff",
+    "color": "#555976FF"
+  },
+  {
+    "id": 160,
+    "name": "Offline Emerald Gemspark Wall",
+    "key": "EmeraldGemsparkOff",
+    "color": "#319A44FF"
+  },
+  {
+    "id": 161,
+    "name": "Offline Ruby Gemspark Wall",
+    "key": "RubyGemsparkOff",
+    "color": "#9A314DFF"
+  },
+  {
+    "id": 162,
+    "name": "Offline Sapphire Gemspark Wall",
+    "key": "SapphireGemsparkOff",
+    "color": "#31319AFF"
+  },
+  {
+    "id": 163,
+    "name": "Offline Topaz Gemspark Wall",
+    "key": "TopazGemsparkOff",
+    "color": "#9A9431FF"
+  },
+  {
+    "id": 164,
+    "name": "Ruby Gemspark Wall",
+    "key": "RubyGemspark",
+    "color": "#FF4F4FFF"
+  },
+  {
+    "id": 165,
+    "name": "Sapphire Gemspark Wall",
+    "key": "SapphireGemspark",
+    "color": "#4F66FFFF"
+  },
+  {
+    "id": 166,
+    "name": "Topaz Gemspark Wall",
+    "key": "TopazGemspark",
+    "color": "#FAFF4FFF"
+  },
+  {
+    "id": 167,
+    "name": "Tin Plating Wall",
+    "key": "TinPlating",
+    "color": "#464433FF",
+    "largeFrameType": 1
+  },
+  {
+    "id": 168,
+    "name": "Confetti Wall",
+    "key": "Confetti",
+    "color": "#546154FF"
+  },
+  {
+    "id": 169,
+    "name": "Midnight Confetti Wall",
+    "key": "ConfettiBlack",
+    "color": "#050505FF"
+  },
+  {
+    "id": 170,
+    "name": "Cave Dirt Wall (natural)",
+    "key": "CaveWall",
+    "color": "#3B2716FF"
+  },
+  {
+    "id": 171,
+    "name": "Rough Dirt Wall (natural)",
+    "key": "CaveWall2",
+    "color": "#3B2716FF"
+  },
+  {
+    "id": 172,
+    "name": "Honeyfall Wall",
+    "key": "Honeyfall",
+    "color": "#A36000FF"
+  },
+  {
+    "id": 173,
+    "name": "Chlorophyte Brick Wall",
+    "key": "ChlorophyteBrick",
+    "color": "#5EA32EFF"
+  },
+  {
+    "id": 174,
+    "name": "Crimtane Brick Wall",
+    "key": "CrimtaneBrick",
+    "color": "#75203BFF"
+  },
+  {
+    "id": 175,
+    "name": "Shroomite Plating Wall",
+    "key": "ShroomitePlating",
+    "color": "#140BCBFF"
+  },
+  {
+    "id": 176,
+    "name": "Martian Conduit Wall",
+    "key": "MartianConduit",
+    "color": "#4A4558FF"
+  },
+  {
+    "id": 177,
+    "name": "Hellstone Brick Wall",
+    "key": "HellstoneBrick",
+    "color": "#3C1E1EFF"
+  },
+  {
+    "id": 178,
+    "name": "Marble Wall (natural)",
+    "key": "MarbleUnsafe",
+    "color": "#6F7587FF",
+    "blendType": 183
+  },
+  {
+    "id": 179,
+    "name": "Smooth Marble Wall",
+    "key": "MarbleBlock",
+    "color": "#6F7587FF",
+    "largeFrameType": 1
+  },
+  {
+    "id": 180,
+    "name": "Granite Wall (natural)",
+    "key": "GraniteUnsafe",
+    "color": "#191736FF",
+    "blendType": 184
+  },
+  {
+    "id": 181,
+    "name": "Smooth Granite Wall",
+    "key": "GraniteBlock",
+    "color": "#191736FF"
+  },
+  {
+    "id": 182,
+    "name": "Meteorite Brick Wall",
+    "key": "MeteoriteBrick",
+    "color": "#4A4781FF"
+  },
+  {
+    "id": 183,
+    "name": "Marble Wall",
+    "key": "Marble",
+    "color": "#6F7587FF",
+    "blendType": 179
+  },
+  {
+    "id": 184,
+    "name": "Granite Wall",
+    "key": "Granite",
+    "color": "#191736FF",
+    "blendType": 181
+  },
+  {
+    "id": 185,
+    "name": "Craggy Stone Wall (natural)",
+    "key": "Cave8Unsafe",
+    "color": "#343434FF",
+    "largeFrameType": 2,
+    "blendType": 274
+  },
+  {
+    "id": 186,
+    "name": "Crystal Block Wall",
+    "key": "Crystal",
+    "color": "#260942FF"
+  },
+  {
+    "id": 187,
+    "name": "Treacherous Sandstone Wall",
+    "key": "Sandstone",
+    "color": "#955033FF",
+    "blendType": 275
+  },
+  {
+    "id": 188,
+    "name": "Corrupt Growth Wall (natural)",
+    "key": "CorruptionUnsafe1",
+    "color": "#523F50FF",
+    "blendType": 276
+  },
+  {
+    "id": 189,
+    "name": "Corrupt Mass Wall (natural)",
+    "key": "CorruptionUnsafe2",
+    "color": "#413D4DFF",
+    "blendType": 277
+  },
+  {
+    "id": 190,
+    "name": "Corrupt Pustule Wall (natural)",
+    "key": "CorruptionUnsafe3",
+    "color": "#40415CFF",
+    "blendType": 278
+  },
+  {
+    "id": 191,
+    "name": "Corrupt Tendril Wall (natural)",
+    "key": "CorruptionUnsafe4",
+    "color": "#4C3554FF",
+    "blendType": 279
+  },
+  {
+    "id": 192,
+    "name": "Crimson Crust Wall (natural)",
+    "key": "CrimsonUnsafe1",
+    "color": "#904334FF",
+    "blendType": 280
+  },
+  {
+    "id": 193,
+    "name": "Crimson Scab Wall (natural)",
+    "key": "CrimsonUnsafe2",
+    "color": "#953030FF",
+    "blendType": 281
+  },
+  {
+    "id": 194,
+    "name": "Crimson Teeth Wall (natural)",
+    "key": "CrimsonUnsafe3",
+    "color": "#6F2024FF",
+    "blendType": 282
+  },
+  {
+    "id": 195,
+    "name": "Crimson Blister Wall (natural)",
+    "key": "CrimsonUnsafe4",
+    "color": "#933037FF",
+    "blendType": 283
+  },
+  {
+    "id": 196,
+    "name": "Layered Dirt Wall (natural)",
+    "key": "DirtUnsafe1",
+    "color": "#614333FF",
+    "blendType": 284
+  },
+  {
+    "id": 197,
+    "name": "Crumbling Dirt Wall (natural)",
+    "key": "DirtUnsafe2",
+    "color": "#70503EFF",
+    "blendType": 285
+  },
+  {
+    "id": 198,
+    "name": "Cracked Dirt Wall (natural)",
+    "key": "DirtUnsafe3",
+    "color": "#583D2EFF",
+    "blendType": 286
+  },
+  {
+    "id": 199,
+    "name": "Wavy Dirt Wall (natural)",
+    "key": "DirtUnsafe4",
+    "color": "#7F5E4CFF",
+    "blendType": 287
+  },
+  {
+    "id": 200,
+    "name": "Hallowed Prism Wall (natural)",
+    "key": "HallowUnsafe1",
+    "color": "#8F327BFF",
+    "blendType": 288
+  },
+  {
+    "id": 201,
+    "name": "Hallowed Cavern Wall (natural)",
+    "key": "HallowUnsafe2",
+    "color": "#887883FF",
+    "blendType": 289
+  },
+  {
+    "id": 202,
+    "name": "Hallowed Shard Wall (natural)",
+    "key": "HallowUnsafe3",
+    "color": "#DB5C8FFF",
+    "blendType": 290
+  },
+  {
+    "id": 203,
+    "name": "Hallowed Crystalline Wall (natural)",
+    "key": "HallowUnsafe4",
+    "color": "#714096FF",
+    "blendType": 291
+  },
+  {
+    "id": 204,
+    "name": "Lichen Stone Wall (natural)",
+    "key": "JungleUnsafe1",
+    "color": "#4A433CFF",
+    "blendType": 292
+  },
+  {
+    "id": 205,
+    "name": "Leafy Jungle Wall (natural)",
+    "key": "JungleUnsafe2",
+    "color": "#3C4E3BFF",
+    "blendType": 293
+  },
+  {
+    "id": 206,
+    "name": "Ivy Stone Wall (natural)",
+    "key": "JungleUnsafe3",
+    "color": "#003615FF",
+    "blendType": 294
+  },
+  {
+    "id": 207,
+    "name": "Jungle Vine Wall (natural)",
+    "key": "JungleUnsafe4",
+    "color": "#4A6148FF",
+    "blendType": 295
+  },
+  {
+    "id": 208,
+    "name": "Ember Wall (natural)",
+    "key": "LavaUnsafe1",
+    "color": "#282523FF",
+    "blendType": 296
+  },
+  {
+    "id": 209,
+    "name": "Cinder Wall (natural)",
+    "key": "LavaUnsafe2",
+    "color": "#4D3F42FF",
+    "blendType": 297
+  },
+  {
+    "id": 210,
+    "name": "Magma Wall (natural)",
+    "key": "LavaUnsafe3",
+    "color": "#6F0606FF",
+    "blendType": 298
+  },
+  {
+    "id": 211,
+    "name": "Smouldering Stone Wall (natural)",
+    "key": "LavaUnsafe4",
+    "color": "#58433BFF",
+    "blendType": 299
+  },
+  {
+    "id": 212,
+    "name": "Worn Stone Wall (natural)",
+    "key": "RocksUnsafe1",
+    "color": "#585750FF",
+    "blendType": 300
+  },
+  {
+    "id": 213,
+    "name": "Stalactite Stone Wall (natural)",
+    "key": "RocksUnsafe2",
+    "color": "#474743FF",
+    "blendType": 301
+  },
+  {
+    "id": 214,
+    "name": "Mottled Stone Wall (natural)",
+    "key": "RocksUnsafe3",
+    "color": "#4C343CFF",
+    "blendType": 302
+  },
+  {
+    "id": 215,
+    "name": "Fractured Stone Wall (natural)",
+    "key": "RocksUnsafe4",
+    "color": "#59303BFF",
+    "blendType": 303
+  },
+  {
+    "id": 216,
+    "name": "Treacherous Hardened Sand Wall",
+    "key": "HardenedSand",
+    "color": "#9E6440FF",
+    "blendType": 304
+  },
+  {
+    "id": 217,
+    "name": "Treacherous Hardened Ebonsand Wall",
+    "key": "CorruptHardenedSand",
+    "color": "#3E2D4BFF",
+    "blendType": 305
+  },
+  {
+    "id": 218,
+    "name": "Treacherous Hardened Crimsand Wall",
+    "key": "CrimsonHardenedSand",
+    "color": "#390E0CFF",
+    "blendType": 306
+  },
+  {
+    "id": 219,
+    "name": "Treacherous Hardened Pearlsand Wall",
+    "key": "HallowHardenedSand",
+    "color": "#604885FF",
+    "blendType": 307
+  },
+  {
+    "id": 220,
+    "name": "Treacherous Ebonsandstone Wall",
+    "key": "CorruptSandstone",
+    "color": "#433750FF",
+    "blendType": 308
+  },
+  {
+    "id": 221,
+    "name": "Treacherous Crimsandstone Wall",
+    "key": "CrimsonSandstone",
+    "color": "#40251DFF",
+    "blendType": 309
+  },
+  {
+    "id": 222,
+    "name": "Treacherous Pearlsandstone Wall",
+    "key": "HallowSandstone",
+    "color": "#46335BFF",
+    "blendType": 310
+  },
+  {
+    "id": 223,
+    "name": "Desert Fossil Wall (natural)",
+    "key": "DesertFossil",
+    "color": "#331204FF"
+  },
+  {
+    "id": 224,
+    "name": "Luminite Brick Wall",
+    "key": "LunarBrickWall",
+    "color": "#393734FF",
+    "largeFrameType": 2
+  },
+  {
+    "id": 225,
+    "name": "Cog Wall",
+    "key": "CogWall",
+    "color": "#444444FF"
+  },
+  {
+    "id": 226,
+    "name": "Sandfall Wall",
+    "key": "SandFall",
+    "color": "#948A4AFF"
+  },
+  {
+    "id": 227,
+    "name": "Snowfall Wall",
+    "key": "SnowFall",
+    "color": "#5F89BFFF"
+  },
+  {
+    "id": 228,
+    "name": "Silly Pink Balloon Wall",
+    "key": "SillyBalloonPinkWall",
+    "color": "#A0024BFF"
+  },
+  {
+    "id": 229,
+    "name": "Silly Purple Balloon Wall",
+    "key": "SillyBalloonPurpleWall",
+    "color": "#6437A4FF"
+  },
+  {
+    "id": 230,
+    "name": "Silly Green Balloon Wall",
+    "key": "SillyBalloonGreenWall",
+    "color": "#007565FF"
+  },
+  {
+    "id": 231,
+    "name": "Iron Brick Wall",
+    "key": "IronBrick",
+    "color": "#6E5A4EFF"
+  },
+  {
+    "id": 232,
+    "name": "Lead Brick Wall",
+    "key": "LeadBrick",
+    "color": "#2F454BFF"
+  },
+  {
+    "id": 233,
+    "name": "Lesion Block Wall",
+    "key": "LesionBlock",
+    "color": "#5B4346FF"
+  },
+  {
+    "id": 234,
+    "name": "Crimstone Brick Wall",
+    "key": "CrimstoneBrick",
+    "color": "#3C2427FF"
+  },
+  {
+    "id": 235,
+    "name": "Smooth Sandstone Wall",
+    "key": "SmoothSandstone",
+    "color": "#8C4B30FF"
+  },
+  {
+    "id": 236,
+    "name": "Spider Nest Wall",
+    "key": "Spider",
+    "color": "#7F312CFF"
+  },
+  {
+    "id": 237,
+    "name": "Solar Brick Wall",
+    "key": "SolarBrick",
+    "color": "#C82C12FF"
+  },
+  {
+    "id": 238,
+    "name": "Vortex Brick Wall",
+    "key": "VortexBrick",
+    "color": "#185D42FF"
+  },
+  {
+    "id": 239,
+    "name": "Nebula Brick Wall",
+    "key": "NebulaBrick",
+    "color": "#A057EAFF"
+  },
+  {
+    "id": 240,
+    "name": "Stardust Brick Wall",
+    "key": "StardustBrick",
+    "color": "#066AFFFF"
+  },
+  {
+    "id": 241,
+    "name": "Orange Stained Glass",
+    "key": "OrangeStainedGlass",
+    "color": "#925F35FF"
+  },
+  {
+    "id": 242,
+    "name": "Gold Starry Wall",
+    "key": "GoldStarryGlassWall",
+    "color": "#050505FF"
+  },
+  {
+    "id": 243,
+    "name": "Blue Starry Wall",
+    "key": "BlueStarryGlassWall",
+    "color": "#050505FF"
+  },
+  {
+    "id": 244,
+    "name": "Living Wood Wall (natural)",
+    "key": "LivingWoodUnsafe",
+    "color": "#3F271AFF",
+    "blendType": 78
+  },
+  {
+    "id": 245,
+    "name": "Wrought Iron Fence",
+    "key": "WroughtIronFence",
+    "color": "#666666FF",
+    "blendType": 1
+  },
+  {
+    "id": 246,
+    "name": "Ebonstone Wall",
+    "key": "EbonstoneEcho",
+    "color": "#3D3A4EFF",
+    "blendType": 3
+  },
+  {
+    "id": 247,
+    "name": "Mud Wall",
+    "key": "MudWallEcho",
+    "color": "#342B2DFF",
+    "blendType": 15
+  },
+  {
+    "id": 248,
+    "name": "Pearlstone Wall",
+    "key": "PearlstoneEcho",
+    "color": "#515465FF",
+    "blendType": 28
+  },
+  {
+    "id": 249,
+    "name": "Snow Wall",
+    "key": "SnowWallEcho",
+    "color": "#556667FF",
+    "blendType": 40
+  },
+  {
+    "id": 250,
+    "name": "Amethyst Stone Wall",
+    "key": "AmethystEcho",
+    "color": "#343434FF",
+    "blendType": 48
+  },
+  {
+    "id": 251,
+    "name": "Topaz Stone Wall",
+    "key": "TopazEcho",
+    "color": "#343434FF",
+    "blendType": 49
+  },
+  {
+    "id": 252,
+    "name": "Sapphire Stone Wall",
+    "key": "SapphireEcho",
+    "color": "#343434FF",
+    "blendType": 50
+  },
+  {
+    "id": 253,
+    "name": "Emerald Stone Wall",
+    "key": "EmeraldEcho",
+    "color": "#343434FF",
+    "blendType": 51
+  },
+  {
+    "id": 254,
+    "name": "Ruby Stone Wall",
+    "key": "RubyEcho",
+    "color": "#343434FF",
+    "blendType": 52
+  },
+  {
+    "id": 255,
+    "name": "Diamond Stone Wall",
+    "key": "DiamondEcho",
+    "color": "#343434FF",
+    "blendType": 53
+  },
+  {
+    "id": 256,
+    "name": "Green Mossy Wall",
+    "key": "Cave1Echo",
+    "color": "#283832FF",
+    "blendType": 54
+  },
+  {
+    "id": 257,
+    "name": "Brown Mossy Wall",
+    "key": "Cave2Echo",
+    "color": "#313024FF",
+    "blendType": 55
+  },
+  {
+    "id": 258,
+    "name": "Red Mossy Wall",
+    "key": "Cave3Echo",
+    "color": "#2B2120FF",
+    "blendType": 56
+  },
+  {
+    "id": 259,
+    "name": "Blue Mossy Wall",
+    "key": "Cave4Echo",
+    "color": "#1F2831FF",
+    "blendType": 57
+  },
+  {
+    "id": 260,
+    "name": "Purple Mossy Wall",
+    "key": "Cave5Echo",
+    "color": "#302334FF",
+    "blendType": 58
+  },
+  {
+    "id": 261,
+    "name": "Rocky Dirt Wall",
+    "key": "Cave6Echo",
+    "color": "#583D2EFF",
+    "blendType": 59
+  },
+  {
+    "id": 262,
+    "name": "Old Stone Wall",
+    "key": "Cave7Echo",
+    "color": "#37271AFF",
+    "blendType": 61
+  },
+  {
+    "id": 263,
+    "name": "Spider Wall",
+    "key": "SpiderEcho",
+    "color": "#27211AFF",
+    "blendType": 62
+  },
+  {
+    "id": 264,
+    "name": "Corrupt Grass Wall",
+    "key": "CorruptGrassEcho",
+    "color": "#2B2A44FF",
+    "blendType": 69
+  },
+  {
+    "id": 265,
+    "name": "Hallowed Grass Wall",
+    "key": "HallowedGrassEcho",
+    "color": "#1E4650FF",
+    "blendType": 70
+  },
+  {
+    "id": 266,
+    "name": "Ice Wall",
+    "key": "IceEcho",
+    "color": "#4E6987FF",
+    "blendType": 71
+  },
+  {
+    "id": 267,
+    "name": "Obsidian Wall",
+    "key": "ObsidianBackEcho",
+    "color": "#332F60FF",
+    "blendType": 79
+  },
+  {
+    "id": 268,
+    "name": "Crimson Grass Wall",
+    "key": "CrimsonGrassEcho",
+    "color": "#653333FF",
+    "blendType": 81
+  },
+  {
+    "id": 269,
+    "name": "Crimstone Wall",
+    "key": "CrimstoneEcho",
+    "color": "#3E2629FF",
+    "blendType": 83
+  },
+  {
+    "id": 270,
+    "name": "Cave Dirt Wall",
+    "key": "CaveWall1Echo",
+    "color": "#3B2716FF"
+  },
+  {
+    "id": 271,
+    "name": "Rough Dirt Wall",
+    "key": "CaveWall2Echo",
+    "color": "#3B2716FF"
+  },
+  {
+    "id": 272,
+    "name": "Marble Wall (unused)",
+    "key": "MarbleEchoUnused",
+    "color": "#6F7587FF"
+  },
+  {
+    "id": 273,
+    "name": "Granite Wall (unused)",
+    "key": "GraniteEchoUnused",
+    "color": "#191736FF"
+  },
+  {
+    "id": 274,
+    "name": "Craggy Stone Wall",
+    "key": "Cave8Echo",
+    "color": "#343434FF",
+    "largeFrameType": 2,
+    "blendType": 185
+  },
+  {
+    "id": 275,
+    "name": "Sandstone Wall",
+    "key": "SandstoneEcho",
+    "color": "#955033FF",
+    "blendType": 187
+  },
+  {
+    "id": 276,
+    "name": "Corrupt Growth Wall",
+    "key": "Corruption1Echo",
+    "color": "#523F50FF",
+    "blendType": 188
+  },
+  {
+    "id": 277,
+    "name": "Corrupt Mass Wall",
+    "key": "Corruption2Echo",
+    "color": "#413D4DFF",
+    "blendType": 189
+  },
+  {
+    "id": 278,
+    "name": "Corrupt Pustule Wall",
+    "key": "Corruption3Echo",
+    "color": "#40415CFF",
+    "blendType": 190
+  },
+  {
+    "id": 279,
+    "name": "Corrupt Tendril Wall",
+    "key": "Corruption4Echo",
+    "color": "#4C3554FF",
+    "blendType": 191
+  },
+  {
+    "id": 280,
+    "name": "Crimson Crust Wall",
+    "key": "Crimson1Echo",
+    "color": "#904334FF",
+    "blendType": 192
+  },
+  {
+    "id": 281,
+    "name": "Crimson Scab Wall",
+    "key": "Crimson2Echo",
+    "color": "#953030FF",
+    "blendType": 193
+  },
+  {
+    "id": 282,
+    "name": "Crimson Teeth Wall",
+    "key": "Crimson3Echo",
+    "color": "#6F2024FF",
+    "blendType": 194
+  },
+  {
+    "id": 283,
+    "name": "Crimson Blister Wall",
+    "key": "Crimson4Echo",
+    "color": "#933037FF",
+    "blendType": 195
+  },
+  {
+    "id": 284,
+    "name": "Layered Dirt Wall",
+    "key": "Dirt1Echo",
+    "color": "#614333FF",
+    "blendType": 196
+  },
+  {
+    "id": 285,
+    "name": "Crumbling Dirt Wall",
+    "key": "Dirt2Echo",
+    "color": "#70503EFF",
+    "blendType": 197
+  },
+  {
+    "id": 286,
+    "name": "Cracked Dirt Wall",
+    "key": "Dirt3Echo",
+    "color": "#583D2EFF",
+    "blendType": 198
+  },
+  {
+    "id": 287,
+    "name": "Wavy Dirt Wall",
+    "key": "Dirt4Echo",
+    "color": "#7F5E4CFF",
+    "blendType": 199
+  },
+  {
+    "id": 288,
+    "name": "Hallowed Prism Wall",
+    "key": "Hallow1Echo",
+    "color": "#8F327BFF",
+    "blendType": 200
+  },
+  {
+    "id": 289,
+    "name": "Hallowed Cavern Wall",
+    "key": "Hallow2Echo",
+    "color": "#887883FF",
+    "blendType": 201
+  },
+  {
+    "id": 290,
+    "name": "Hallowed Shard Wall",
+    "key": "Hallow3Echo",
+    "color": "#DB5C8FFF",
+    "blendType": 202
+  },
+  {
+    "id": 291,
+    "name": "Hallowed Crystalline Wall",
+    "key": "Hallow4Echo",
+    "color": "#714096FF",
+    "blendType": 203
+  },
+  {
+    "id": 292,
+    "name": "Lichen Stone Wall",
+    "key": "Jungle1Echo",
+    "color": "#4A433CFF",
+    "blendType": 204
+  },
+  {
+    "id": 293,
+    "name": "Leafy Jungle Wall",
+    "key": "Jungle2Echo",
+    "color": "#3C4E3BFF",
+    "blendType": 205
+  },
+  {
+    "id": 294,
+    "name": "Ivy Stone Wall",
+    "key": "Jungle3Echo",
+    "color": "#003615FF",
+    "blendType": 206
+  },
+  {
+    "id": 295,
+    "name": "Jungle Vine Wall",
+    "key": "Jungle4Echo",
+    "color": "#4A6148FF",
+    "blendType": 207
+  },
+  {
+    "id": 296,
+    "name": "Ember Wall",
+    "key": "Lava1Echo",
+    "color": "#282523FF",
+    "blendType": 208
+  },
+  {
+    "id": 297,
+    "name": "Cinder Wall",
+    "key": "Lava2Echo",
+    "color": "#4D3F42FF",
+    "blendType": 209
+  },
+  {
+    "id": 298,
+    "name": "Magma Wall",
+    "key": "Lava3Echo",
+    "color": "#6F0606FF",
+    "blendType": 210
+  },
+  {
+    "id": 299,
+    "name": "Smouldering Stone Wall",
+    "key": "Lava4Echo",
+    "color": "#58433BFF",
+    "blendType": 211
+  },
+  {
+    "id": 300,
+    "name": "Worn Stone Wall",
+    "key": "Rocks1Echo",
+    "color": "#585750FF",
+    "blendType": 212
+  },
+  {
+    "id": 301,
+    "name": "Stalactite Stone Wall",
+    "key": "Rocks2Echo",
+    "color": "#474743FF",
+    "blendType": 213
+  },
+  {
+    "id": 302,
+    "name": "Mottled Stone Wall",
+    "key": "Rocks3Echo",
+    "color": "#4C343CFF",
+    "blendType": 214
+  },
+  {
+    "id": 303,
+    "name": "Fractured Stone Wall",
+    "key": "Rocks4Echo",
+    "color": "#59303BFF",
+    "blendType": 215
+  },
+  {
+    "id": 304,
+    "name": "Hardened Sand Wall",
+    "key": "HardenedSandEcho",
+    "color": "#9E6440FF",
+    "blendType": 216
+  },
+  {
+    "id": 305,
+    "name": "Hardened Ebonsand Wall",
+    "key": "CorruptHardenedSandEcho",
+    "color": "#3E2D4BFF",
+    "blendType": 217
+  },
+  {
+    "id": 306,
+    "name": "Hardened Crimsand Wall",
+    "key": "CrimsonHardenedSandEcho",
+    "color": "#390E0CFF",
+    "blendType": 218
+  },
+  {
+    "id": 307,
+    "name": "Hardened Pearlsand Wall",
+    "key": "HallowHardenedSandEcho",
+    "color": "#604885FF",
+    "blendType": 219
+  },
+  {
+    "id": 308,
+    "name": "Ebonsandstone Wall",
+    "key": "CorruptSandstoneEcho",
+    "color": "#433750FF",
+    "blendType": 220
+  },
+  {
+    "id": 309,
+    "name": "Crimsandstone Wall",
+    "key": "CrimsonSandstoneEcho",
+    "color": "#40251DFF",
+    "blendType": 221
+  },
+  {
+    "id": 310,
+    "name": "Pearlsandstone Wall",
+    "key": "HallowSandstoneEcho",
+    "color": "#46335BFF",
+    "blendType": 222
+  },
+  {
+    "id": 311,
+    "name": "Desert Fossil Wall",
+    "key": "DesertFossilEcho",
+    "color": "#331204FF"
+  },
+  {
+    "id": 312,
+    "name": "Bamboo Wall",
+    "key": "BambooBlockWall",
+    "color": "#4E6E33FF"
+  },
+  {
+    "id": 313,
+    "name": "Large Bamboo Wall",
+    "key": "LargeBambooBlockWall",
+    "color": "#4E6E33FF"
+  },
+  {
+    "id": 314,
+    "name": "Amber Stone Wall",
+    "key": "AmberStoneWallEcho",
+    "color": "#343434FF"
+  },
+  {
+    "id": 315,
+    "name": "Bamboo Fence",
+    "key": "BambooFence",
+    "color": "#B5E61DFF"
+  },
+  {
+    "id": 316,
+    "name": "Ash Wood Wall",
+    "key": "AshWood",
+    "color": "#7D6464FF"
+  },
+  {
+    "id": 317,
+    "name": "Ash Wood Fence",
+    "key": "AshWoodFence",
+    "color": "#8F7579FF"
+  },
+  {
+    "id": 318,
+    "name": "Echo Wall",
+    "key": "EchoWall",
+    "color": "#060622FF"
+  },
+  {
+    "id": 319,
+    "name": "Reef Wall",
+    "key": "ReefWall",
+    "color": "#69336CFF"
+  },
+  {
+    "id": 320,
+    "name": "Poo Wall",
+    "key": "PoopWall",
+    "color": "#4B1E0FFF"
+  },
+  {
+    "id": 321,
+    "name": "Aetherium Wall",
+    "key": "ShimmerBlockWall",
+    "color": "#5B6C82FF"
+  },
+  {
+    "id": 322,
+    "name": "Aetherium Brick Wall",
+    "key": "ShimmerBrickWall",
+    "color": "#5B6C82FF"
+  },
+  {
+    "id": 323,
+    "name": "Lunar Rust Brick Wall",
+    "key": "LunarRustBrickWall",
+    "color": "#371921FF",
+    "largeFrameType": 2
+  },
+  {
+    "id": 324,
+    "name": "Dark Celestial Brick Wall",
+    "key": "DarkCelestialBrickWall",
+    "color": "#3C3791FF",
+    "largeFrameType": 2
+  },
+  {
+    "id": 325,
+    "name": "Astra Brick Wall",
+    "key": "AstraBrickWall",
+    "color": "#0A0532FF",
+    "largeFrameType": 2
+  },
+  {
+    "id": 326,
+    "name": "Cosmic Ember Brick Wall",
+    "key": "CosmicEmberBrickWall",
+    "color": "#1E694BFF",
+    "largeFrameType": 2
+  },
+  {
+    "id": 327,
+    "name": "Cryocore Brick Wall",
+    "key": "CryocoreBrickWall",
+    "color": "#052D37FF",
+    "largeFrameType": 2
+  },
+  {
+    "id": 328,
+    "name": "Mercury Brick Wall",
+    "key": "MercuryBrickWall",
+    "color": "#141923FF",
+    "largeFrameType": 2
+  },
+  {
+    "id": 329,
+    "name": "Star Royale Brick Wall",
+    "key": "StarRoyaleBrickWall",
+    "color": "#0F0A32FF",
+    "largeFrameType": 2
+  },
+  {
+    "id": 330,
+    "name": "Heavenforge Brick Wall",
+    "key": "HeavenforgeBrickWall",
+    "color": "#99A4BBFF",
+    "largeFrameType": 2
+  },
+  {
+    "id": 331,
+    "name": "Ancient Blue Brick Wall",
+    "key": "AncientBlueBrickWall",
+    "color": "#1B1F2AFF"
+  },
+  {
+    "id": 332,
+    "name": "Ancient Green Brick Wall",
+    "key": "AncientGreenBrickWall",
+    "color": "#1F271AFF"
+  },
+  {
+    "id": 333,
+    "name": "Ancient Pink Brick Wall",
+    "key": "AncientPinkBrickWall",
+    "color": "#291C24FF"
+  },
+  {
+    "id": 334,
+    "name": "Ancient Gold Brick Wall",
+    "key": "AncientGoldBrickWall",
+    "color": "#4A3E0CFF"
+  },
+  {
+    "id": 335,
+    "name": "Ancient Silver Brick Wall",
+    "key": "AncientSilverBrickWall",
+    "color": "#2E383BFF"
+  },
+  {
+    "id": 336,
+    "name": "Ancient Copper Brick Wall",
+    "key": "AncientCopperBrickWall",
+    "color": "#4B200BFF"
+  },
+  {
+    "id": 337,
+    "name": "Ancient Obsidian Brick Wall",
+    "key": "AncientObsidianBrickWall",
+    "color": "#0F0F0FFF"
+  },
+  {
+    "id": 338,
+    "name": "Ancient Hellstone Brick Wall",
+    "key": "AncientHellstoneBrickWall",
+    "color": "#432525FF"
+  },
+  {
+    "id": 339,
+    "name": "Ancient Cobalt Brick Wall",
+    "key": "AncientCobaltBrickWall",
+    "color": "#0B233EFF"
+  },
+  {
+    "id": 340,
+    "name": "Ancient Mythril Brick Wall",
+    "key": "AncientMythrilBrickWall",
+    "color": "#153F46FF"
+  },
+  {
+    "id": 341,
+    "name": "Lava Moss Brick Wall",
+    "key": "LavaMossBlockWall",
+    "color": "#642801FF"
+  },
+  {
+    "id": 342,
+    "name": "Argon Moss Brick Wall",
+    "key": "ArgonMossBlockWall",
+    "color": "#5C1E48FF"
+  },
+  {
+    "id": 343,
+    "name": "Krypton Moss Brick Wall",
+    "key": "KryptonMossBlockWall",
+    "color": "#2A5101FF"
+  },
+  {
+    "id": 344,
+    "name": "Xenon Moss Brick Wall",
+    "key": "XenonMossBlockWall",
+    "color": "#01516DFF"
+  },
+  {
+    "id": 345,
+    "name": "Neon Moss Brick Wall",
+    "key": "VioletMossBlockWall",
+    "color": "#381661FF"
+  },
+  {
+    "id": 346,
+    "name": "Helium Moss Brick Wall",
+    "key": "RainbowMossBlockWall",
+    "color": "#343434FF"
+  },
+  {
+    "id": 347,
+    "name": "Shimmerfall Wall",
+    "key": "Shimmerfall",
+    "color": "#644182FF"
+  },
+  {
+    "id": 348,
+    "name": "Fallen Star Wall",
+    "key": "FallenStarWall",
+    "color": "#784B4BFF"
+  },
+  {
+    "id": 349,
+    "name": "Wall_349",
+    "key": "StoneUnsafe",
+    "color": "#343434FF",
+    "blendType": 1
+  },
+  {
+    "id": 350,
+    "name": "Wall_350",
+    "key": "UnbreakableBlockWall",
+    "color": "#00FF00FF"
+  },
+  {
+    "id": 351,
+    "name": "Feywood Wall",
+    "key": "FeywoodWall",
+    "color": "#503928FF"
+  },
+  {
+    "id": 352,
+    "name": "Hallowed Brick Wall",
+    "key": "HallowedBrickWall",
+    "color": "#75640AFF"
+  },
+  {
+    "id": 353,
+    "name": "Pine Tree Wall",
+    "key": "PineTreeBlockWall",
+    "color": "#0D3622FF"
+  },
+  {
+    "id": 354,
+    "name": "Easter Wall",
+    "key": "EasterBlockWall",
+    "color": "#784150FF",
+    "largeFrameType": 1
+  },
+  {
+    "id": 355,
+    "name": "Gothic Brick Wall",
+    "key": "GothicBrickWall",
+    "color": "#202520FF",
+    "largeFrameType": 2
+  },
+  {
+    "id": 356,
+    "name": "Flinx Fur Wall",
+    "key": "FlinxFurBlockWall",
+    "color": "#69556BFF"
+  },
+  {
+    "id": 357,
+    "name": "Jellyfish Wall",
+    "key": "JellyfishBlockWall",
+    "color": "#2D3E75FF"
+  },
+  {
+    "id": 358,
+    "name": "Pine Wood Wall",
+    "key": "PineWoodBlockWall",
+    "color": "#502D19FF",
+    "largeFrameType": 2
+  },
+  {
+    "id": 359,
+    "name": "Harpy Wall",
+    "key": "HarpyBlockWall",
+    "color": "#0D4666FF",
+    "largeFrameType": 2
+  },
+  {
+    "id": 360,
+    "name": "Crescent Wall",
+    "key": "MoonplateBlockWall",
+    "color": "#495D74FF"
+  },
+  {
+    "id": 361,
+    "name": "Librarian Wall",
+    "key": "LibrarianBlockWall",
+    "color": "#353330FF"
+  },
+  {
+    "id": 362,
+    "name": "Spike Wall",
+    "key": "SpikeBlockWall",
+    "color": "#3C3936FF",
+    "largeFrameType": 2
+  },
+  {
+    "id": 363,
+    "name": "Office Wall",
+    "key": "OfficeBlockWall",
+    "color": "#3D270AFF",
+    "largeFrameType": 2
+  },
+  {
+    "id": 364,
+    "name": "Forbidden Wall",
+    "key": "ForbiddenBlockWall",
+    "color": "#73590EFF"
+  },
+  {
+    "id": 365,
+    "name": "Aquarium Wall",
+    "key": "WaterBlockWall",
+    "color": "#013967FF"
+  },
+  {
+    "id": 366,
+    "name": "Boulder Wall",
+    "key": "BoulderBlockWall",
+    "color": "#3C3C3CFF",
+    "largeFrameType": 2
+  }
+]

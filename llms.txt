@@ -119,4 +119,11 @@ Some common ones:
 
 ## Tools for agents that can run code
 
-The TerraWorld repository has a CLI: `npm run structure -- search|check|compile|render|link|catalog`. `check` prints an ASCII preview with rulers, `render --png` draws a map-colour picture, and `compile` writes the `.twpack`. The library lives in `src/lib/structure-spec`.
+With Node.js 18+, run `npx terraworld-ai <command>`; nothing else to install:
+
+- `npx terraworld-ai search "chair"` lists exact names with size, attach side and facing.
+- `npx terraworld-ai check house.twspec` lists every problem and prints an ASCII preview. It exits with code 1 while the spec has errors, so loop until it passes.
+- `npx terraworld-ai compile house.twspec -o house.twpack --png house.png` writes the `.twpack` and a map-colour picture.
+- `npx terraworld-ai link house.twspec` prints the Structure Studio link. Use `-` as the file name to read the spec from stdin.
+
+The same functions are importable: `import { buildSpec } from "terraworld-ai"`. Inside the TerraWorld repository, `npm run structure -- ...` runs the same commands from source.

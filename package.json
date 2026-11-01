@@ -1,0 +1,47 @@
+{
+  "name": "terraworld-ai",
+  "version": "0.1.0",
+  "description": "Design Terraria structures with AI: check TerraWorld structure specs, build .twpack files and make Structure Studio links.",
+  "keywords": [
+    "terraria",
+    "terraworld",
+    "structure",
+    "building",
+    "ai",
+    "llm",
+    "agent-skill",
+    "twpack",
+    "tmodloader"
+  ],
+  "homepage": "https://terraworld.dev/en/ai/skill-builder",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrabPlayer/terraworld-ai.git"
+  },
+  "bugs": "https://github.com/CrabPlayer/terraworld-ai/issues",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "terraworld-ai": "dist/cli.mjs"
+  },
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist",
+    "data",
+    "llms.txt",
+    "ai",
+    "skills",
+    "prompts",
+    "examples"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

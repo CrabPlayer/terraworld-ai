@@ -34,6 +34,33 @@ Quick start in any chat:
 The [skill builder](https://terraworld.dev/en/ai/skill-builder) on terraworld.dev makes the same files with your own
 preferences (reply language, default style, NPC housing).
 
+## Command line
+
+Needs Node.js 18 or newer. Nothing to install: `npx` downloads the package on first use.
+
+```bash
+npx terraworld-ai search "chair"                      # exact names of blocks, walls and objects
+npx terraworld-ai check house.twspec                  # list problems and print an ASCII preview
+npx terraworld-ai compile house.twspec -o house.twpack --png house.png
+npx terraworld-ai render castle.twpack --png castle.png
+npx terraworld-ai link house.twspec                   # link that opens the spec in Structure Studio
+```
+
+`check` exits with code 1 when the spec has errors, so agents can loop until it passes. Use `-` as the file name to read
+the spec from stdin.
+
+## Library
+
+```js
+import { buildSpec, createSpecLink } from "terraworld-ai";
+
+const spec = "size 12 8\nrect x=0 y=7 w=12 tile=Gray_Brick\nobject name=Wooden_Chair x=3 y=7 at=floor facing=right";
+const result = await buildSpec(spec);
+console.log(result.issues, result.ascii);
+if (result.ok) writeFileSync("house.twpack", result.twpack);
+console.log(createSpecLink(spec));
+```
+
 ## Contents
 
 - `llms.txt`: the structure spec language, hand-over rules and design rules.
@@ -41,6 +68,7 @@ preferences (reply language, default style, NPC housing).
 - `skills/terraworld-structures/`: an [Agent Skill](https://agentskills.io) folder, also packed as a zip.
 - `prompts/`: ready-to-paste instructions and a starter prompt.
 - `examples/`: a small house in the text form and a large castle in the JSON form.
+- `dist/`, `data/`: the `terraworld-ai` npm package (command line and library) and the game data it reads.
 
 ## Updating
 

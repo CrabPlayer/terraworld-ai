@@ -1,12 +1,14 @@
 {
   "name": "terraworld-ai",
   "version": "0.1.0",
-  "description": "Design Terraria structures with AI: check TerraWorld structure specs, build .twpack files and make Structure Studio links.",
+  "description": "Design Terraria structures and write TerraWorld world scripts with AI: check structure specs, build .twpack files, make Structure Studio and script links.",
   "keywords": [
     "terraria",
     "terraworld",
     "structure",
     "building",
+    "script",
+    "world-editor",
     "ai",
     "llm",
     "agent-skill",

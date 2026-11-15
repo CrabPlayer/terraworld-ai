@@ -127,3 +127,11 @@ With Node.js 18+, run `npx terraworld-ai <command>`; nothing else to install:
 - `npx terraworld-ai link house.twspec` prints the Structure Studio link. Use `-` as the file name to read the spec from stdin.
 
 The same functions are importable: `import { buildSpec } from "terraworld-ai"`. Inside the TerraWorld repository, `npm run structure -- ...` runs the same commands from source.
+
+## Scripts
+
+TerraWorld also runs JavaScript **scripts** on an open world (world page → Script panel) with one sandboxed global, `tw`: count, find, chart and mark things, or draft block and wall changes that the user previews and approves. This file is about structures; for scripts use these instead:
+
+- API: https://terraworld.dev/scripting/terraworld.d.ts (TypeScript declarations; never use anything it does not declare). Mirror: https://cdn.jsdelivr.net/gh/CrabPlayer/terraworld-ai@main/skills/terraworld-scripts/references/terraworld.d.ts
+- Agent Skill `terraworld-scripts` (rules, worked examples, `check_script.py`, `make_link.py`): https://github.com/CrabPlayer/terraworld-ai/tree/main/skills/terraworld-scripts, or the zip for Claude: https://github.com/CrabPlayer/terraworld-ai/raw/main/skills/terraworld-scripts.zip
+- Hand-over: the whole script in a ```js code block first, then a link `https://terraworld.dev/world#script=1.<payload>`, where `payload` is the base64url (no `=` padding) of the zlib stream (deflate level 9) of the script's UTF-8 bytes. Only give that link when you ran code to make it; it holds compressed data. Opening it puts the script in the editor without running it.

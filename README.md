@@ -1,7 +1,7 @@
 # TerraWorld AI
 
-Files that teach AI assistants (ChatGPT, Claude, Gemini and others) to design Terraria structures for
-[TerraWorld](https://terraworld.dev). The AI writes a short **structure spec** using Terraria names; the user opens it in
+Files that teach AI assistants (ChatGPT, Claude, Gemini and others) to design Terraria structures and write world
+scripts for [TerraWorld](https://terraworld.dev). The AI writes a short **structure spec** using Terraria names; the user opens it in
 [Structure Studio](https://terraworld.dev/structure-studio), checks it in Real View, and exports a `.twpack` that the
 [TerraWorld Blueprint](https://github.com/CrabPlayer/TerraWorldBlueprint) mod can build in game.
 
@@ -17,6 +17,8 @@ This repository mirrors the files served at terraworld.dev, for AIs that cannot 
 | Block names | https://raw.githubusercontent.com/CrabPlayer/terraworld-ai/main/ai/blocks.txt | https://cdn.jsdelivr.net/gh/CrabPlayer/terraworld-ai@main/ai/blocks.txt |
 | Wall names | https://raw.githubusercontent.com/CrabPlayer/terraworld-ai/main/ai/walls.txt | https://cdn.jsdelivr.net/gh/CrabPlayer/terraworld-ai@main/ai/walls.txt |
 | Object names | https://raw.githubusercontent.com/CrabPlayer/terraworld-ai/main/ai/objects.txt | https://cdn.jsdelivr.net/gh/CrabPlayer/terraworld-ai@main/ai/objects.txt |
+| Script API | https://raw.githubusercontent.com/CrabPlayer/terraworld-ai/main/skills/terraworld-scripts/references/terraworld.d.ts | https://cdn.jsdelivr.net/gh/CrabPlayer/terraworld-ai@main/skills/terraworld-scripts/references/terraworld.d.ts |
+| Script examples | https://raw.githubusercontent.com/CrabPlayer/terraworld-ai/main/skills/terraworld-scripts/references/scripting-guide.md | https://cdn.jsdelivr.net/gh/CrabPlayer/terraworld-ai@main/skills/terraworld-scripts/references/scripting-guide.md |
 
 Quick start in any chat:
 
@@ -33,6 +35,20 @@ Quick start in any chat:
 
 The [skill builder](https://terraworld.dev/en/ai/skill-builder) on terraworld.dev makes the same files with your own
 preferences (reply language, default style, NPC housing).
+
+## Scripts
+
+TerraWorld's world page has a **Script panel** that runs JavaScript on the open world with a sandboxed `tw` API: count,
+find, chart and mark things, or draft block and wall changes that the user previews and applies. The
+[`skills/terraworld-scripts/`](skills/terraworld-scripts) skill teaches an AI to write those scripts, check them and hand over a
+link that opens the script in the editor (it never runs by itself).
+
+| AI | What to use |
+|---|---|
+| Claude | Download [`skills/terraworld-scripts.zip`](https://github.com/CrabPlayer/terraworld-ai/raw/main/skills/terraworld-scripts.zip) and upload it like the structures skill. Claude checks every script with `scripts/check_script.py` and makes links with `scripts/make_link.py`. |
+| Other AIs | Add [`SKILL.md`](skills/terraworld-scripts/SKILL.md), [`terraworld.d.ts`](skills/terraworld-scripts/references/terraworld.d.ts) and [`scripting-guide.md`](skills/terraworld-scripts/references/scripting-guide.md) as knowledge files, or use **Ask AI** next to **Run** in the Script panel, which copies a ready prompt. |
+
+[Open an example script in TerraWorld](https://terraworld.dev/world#script=1.eNpdUstu2zAQvOsrBgYaUIBNOynQgw0XLdICPTRfUPRASauKNSMS5PohBP33Lqk86h4IkjvD2dnlrtf4NJpHwoOJB3y3PeE-TomNS9VasI5SG21g68dCSaATxemKCcF4IDyaAPVg0gFfbArOTDXM2MHZxKkQWucTJRY-ScAjBXMedcnD55UJFrdV60dh2A578FnbLmm2jtTiJdc3MpEX9Q7yKmteGWmcbw_PEr0_jlnlx89dJUpZJenex6-mHRRj_xFPFbLKVdEwkXB3uYNvflPLaYsDURDHbirp2IeVo57RknNaBGwPxdq0bE-Emxuw5ikQ9vt9LqIEjniH9x9KaDNHTvOlnk3qcEyDesJlK9BliSnvE_7UuyqvuZwCpxlNAs79OfvoOl36uKukOKiZLY77WbxG0J38gBlbcSV_yIOOGVDlOEzBswr6glVRD5JYTlNdZ71sLvnISpklmjo3zbyprdC8XoSeuywjICsePjunyvOlGLfiaYvFv31eLOFMQ-7_cCladI5Wy53VFZrk1ezJ0fiLh1cqm0ZG5Nmusy2pzRK3mzonZ8uOJM398-y9jN2c6i_yRfdg) (marks every Life Crystal and lists the closest to spawn).
 
 ## Command line
 
@@ -63,9 +79,10 @@ console.log(createSpecLink(spec));
 
 ## Contents
 
-- `llms.txt`: the structure spec language, hand-over rules and design rules.
+- `llms.txt`: the structure spec language, hand-over rules and design rules, and where the script files are.
 - `ai/`: every block, wall and object name the spec accepts.
-- `skills/terraworld-structures/`: an [Agent Skill](https://agentskills.io) folder, also packed as a zip.
+- `skills/terraworld-structures/`: an [Agent Skill](https://agentskills.io) folder for structures, also packed as a zip.
+- `skills/terraworld-scripts/`: an Agent Skill folder for TerraWorld scripts (API, examples, checker, link maker), also packed as a zip.
 - `prompts/`: ready-to-paste instructions and a starter prompt.
 - `examples/`: a small house in the text form and a large castle in the JSON form.
 - `dist/`, `data/`: the `terraworld-ai` npm package (command line and library) and the game data it reads.
